@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,30 +25,21 @@
     <main>
         <section class="menu">
             <h3 class="menu-titulo">MENU</h3>
-            <table class="menu-lista">
-                <tr class="menu-item">
-                    <td>
-                        <div class="menu-button">
-                            <img src="Image/Code.png">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="menu-link">
-                            <a href="index.html">Editor de Codigo</a>
-                        </div>
-                    </td>
-                <tr class="menu-item">
-                    <td>
-                        <div class="menu-button">
-                            <img src="Image/comunidade.png">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="menu-link">
-                            <a href="">Comunidade</a>
-                        </div>
-                    </td>
-            </table>
+
+            <nav class="menu-item">
+                <div class="item">
+                    <div class="menu-button">
+                        <img src="Image/Code.png">
+                    </div>
+                    <a href="index.html">Editor de Codigo</a>
+                </div>
+                <div class="item">
+                    <div class="menu-button">
+                        <img src="Image/comunidade.png">
+                    </div>
+                    <a href="">Comunidade</a>
+                </div>
+            </nav>            
         </section>
 
         <section class="projeto">
@@ -64,17 +54,19 @@
                     <textarea id="descricao-projeto" rows="10" placeholder="Descricao do seu projeto"></textarea>
                 </div>
                 <br>
-                <h3>PERSONALIZACAO</h3>
-                <select>
-                    <option>Javascript</option>
-                    <option></option>
-                    <option></option>
-                </select>
-                <select>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                </select>
+                <div class="personalizacao-projeto">
+                    <h3>PERSONALIZACAO</h3>
+                    <select class="lista-linguagem">
+                        <option>Javascript</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                    </select>
+                    <select class="lista-cor">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
                 <input id="botao-salvar-projeto" type="submit" value="Salvar projeto"></button>
             </form>
 
