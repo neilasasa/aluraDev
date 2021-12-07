@@ -1,0 +1,101 @@
+body {
+    background: #051D3B;
+    border-radius: 40px;
+    margin: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Code for header */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+}
+
+.container input {
+    width: 752px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.16);
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-left: 15px;
+    border-style: none;
+}
+
+.foto-perfil {
+    width: 150px;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-size: 12px;
+    letter-spacing: 0.4em;
+}
+
+/* Code for body, menu section */
+.menu-button {
+    width: 48px;
+    height: 48px;
+    background: #5081FB;
+    border-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-style: none;
+    color: #FFFFFF;
+}
+
+.menu-button img {
+    margin-top: 30%;
+}
+
+.menu-link {
+    width: 300px;
+}
+
+.menu-link a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    vertical-align: middle;
+    margin-left: 5%;
+}
+
+/* Code for body, type code */
+
+
+/* Code for body, new project */
+.info-projeto {
+    display: flex;
+    flex-direction: column;
+}
+
+#nome-projeto,
+#descricao-projeto {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    color: #FFFFFF;
+    align-self: stretch;
+    width: 272px;
+    height: 56px;
+    margin-bottom: 1em;
+    padding-left: 15px;
+    font-size: 16px;
+    border-style: none;
+}
+
+#descricao-projeto {
+    height: 80px;
+    padding-top: 2em;
+    font-family: 'Inter', sans-serif;
+}
