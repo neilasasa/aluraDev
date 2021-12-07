@@ -16,60 +16,62 @@
 <body>
     <header>
         <div class="container">
-            <h1><img class="logo" src="Image/logo.png" alt="Logo AluraDev" /></h1>
+            <h1><img class="container__image--logo" src="Image/logo.png" alt="Logo AluraDev" /></h1>
             <input type="text" placeholder="Busque por algo">
-            <img class="foto-perfil" src="Image/foto-perfil.png">
+            <img class="container__image--fotoPerfil" src="Image/foto-perfil.png">
         </div>
     </header>
 
     <main>
         <section class="menu">
-            <h3 class="menu-titulo">MENU</h3>
+            <h3>MENU</h3>
 
-            <nav class="menu-item">
-                <div class="item">
-                    <div class="menu-button">
+            <nav class="menu__list">
+                <div class="menu__list--item">
+                    <div class="menu__list--button">
                         <img src="Image/Code.png">
                     </div>
                     <a href="index.html">Editor de Codigo</a>
                 </div>
-                <div class="item">
-                    <div class="menu-button">
+                <div class="menu__list--item">
+                    <div class="menu__list--button">
                         <img src="Image/comunidade.png">
                     </div>
                     <a href="">Comunidade</a>
                 </div>
-            </nav>            
+            </nav>
         </section>
 
         <section class="projeto">
-            <textarea rows="20"></textarea>
+            <div>
+                <textarea id="projeto-code" rows="20"></textarea>
+            </div>
+            <br>
+            <input id="botao-highlight" type="button" value="Visualizar com o highlight">
         </section>
 
-        <section class="salvar-projeto">
+        <section class="formSalvarProjeto">
             <form>
-                <div class="info-projeto">
+                <div class="formSalvarProjeto__info">
                     <h3>SEU PROJETO</h3>
                     <input id="nome-projeto" type="text" placeholder="Nome do seu projeto">
                     <textarea id="descricao-projeto" rows="10" placeholder="Descricao do seu projeto"></textarea>
                 </div>
                 <br>
-                <div class="personalizacao-projeto">
+                <div class="formSalvarProjeto__personalizacao">
                     <h3>PERSONALIZACAO</h3>
-                    <select class="lista-linguagem">
+                    <select class="formSalvarProjeto__personalizacao--linguagem">
                         <option>Javascript</option>
                         <option>HTML</option>
                         <option>CSS</option>
                     </select>
-                    <select class="lista-cor">
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select>
+                    <div class="formSalvarProjeto__personalizacao--cor">
+                        <div></div>
+                    </div>
                 </div>
-                <input id="botao-salvar-projeto" type="submit" value="Salvar projeto"></button>
+                <br>
+                <input id="botao-salvar-projeto" type="submit" value="Salvar projeto">
             </form>
-
         </section>
     </main>
 
