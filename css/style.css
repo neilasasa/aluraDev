@@ -5,6 +5,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+textarea{
+    resize: none; 
+}
+
 /* Code for header */
 header .container {
     display: flex;
@@ -26,6 +30,7 @@ header .container {
     padding-left: 15px;
     border-style: none;
     box-sizing: border-box;
+    margin-right: 7em;
 }
 
 .container__image--fotoPerfil {
@@ -86,6 +91,7 @@ h3 {
 }
 
 /* Code for body, type code */
+
 #botao-highlight {
     width: 752px;
     height: 56px;
@@ -96,15 +102,55 @@ h3 {
     border-style: none;
 }
 
-.projeto div {
+.projeto__code--boxOut {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding: 32px;
     width: 752px;
     height: 366px;
     background: #6BD1FF;
     border-radius: 8px;
+    border-style: none;    
     box-sizing: border-box;
+}
+
+.projeto__code--boxIn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    width: 688px;
+    height: 302px;
+    background: #141414;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+.projeto__code--boxIn{
+    display: flex;
+    align-items: flex-start;
+}
+
+.projeto__code--boxIn img {
+    width: 12px;
+    height: 12px;
+    margin-right: 0.3em;
+}
+
+#projeto-code {
+    width: 656px;
+    height: 234px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace;
+    flex: none;
+    order: 1;
+    margin-top: 24px;    
+    background: #141414;
     border-style: none;
 }
 
