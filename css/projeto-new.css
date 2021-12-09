@@ -1,0 +1,71 @@
+/* Code for body, new project */
+.formSalvarProjeto {
+    margin-right: 1rem;
+}
+
+.formSalvarProjeto__info,
+.formSalvarProjeto__personalizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#nome-projeto,
+#descricao-projeto,
+.formSalvarProjeto__personalizacao--linguagem {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    color: #FFFFFF;
+    align-self: stretch;
+    width: 272px;
+    height: 56px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    border-style: none;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+
+#descricao-projeto {
+    height: 80px;
+    padding-top: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.item-linguagem {
+    background: rgba(255, 255, 255, 0.16);
+    color: #000000;
+}
+
+.formSalvarProjeto__personalizacao--cor {
+    display: flex;
+    justify-content: center;
+    background-color: #051D3B;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    width: 272px;
+    height: 56px;
+    font-size: 16px;
+}
+
+
+.formSalvarProjeto__personalizacao--cor select {
+    -webkit-appearance: none;
+    background-color: #6BD1FF;
+    border-radius: 4px;
+    width: 256px;
+    height: 40px;
+    align-self: center;
+    border-style: none;
+}
+
+#botao-salvar-projeto {
+    width: 272px;
+    height: 56px;
+    background: #5081FB;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(5, 29, 59, 1);
+    border-style: none;
+}

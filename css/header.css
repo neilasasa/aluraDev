@@ -1,0 +1,27 @@
+/* Code for header */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__image--logo {
+    width: 180px;
+}
+
+.container input {
+    width: 752px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.16);
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-left: 15px;
+    border-style: none;
+    box-sizing: border-box;
+    margin-right: 7rem;
+}
+
+.container__image--fotoPerfil {
+    width: 150px;
+}

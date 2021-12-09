@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/projeto-box.css">
+    <link rel="stylesheet" href="css/projeto-new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
+
 
     <title>Alura Front-End Challenge</title>
 </head>
@@ -69,13 +73,17 @@
                 <br>
                 <div class="formSalvarProjeto__personalizacao">
                     <h3>PERSONALIZACAO</h3>
-                    <select class="formSalvarProjeto__personalizacao--linguagem">
-                        <option>Javascript</option>
-                        <option>HTML</option>
-                        <option>CSS</option>
+                    <select class="formSalvarProjeto__personalizacao--linguagem" name="selecao-linguagem">
+                        <option class="item-linguagem" value="Javascript">Javascript</option>
+                        <option class="item-linguagem" value="HTML">HTML</option>
+                        <option class="item-linguagem" value="CSS">CSS</option>
                     </select>
                     <div class="formSalvarProjeto__personalizacao--cor">
-                        <div></div>
+                        <select>
+                            <option value="#6BD1FF"></option>
+                            <option value="#FCBA03"></option>
+                            <option value="#C42318"></option>
+                        </select>
                     </div>
                 </div>
                 <br>
