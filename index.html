@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/projeto-box.css">
+    <link rel="stylesheet" href="css/projeto-code.css">
     <link rel="stylesheet" href="css/projeto-new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,34 +20,33 @@
 
 <body>
     <header>
-        <div class="container">
-            <h1><img class="container__image--logo" src="Image/logo.png" alt="Logo AluraDev" /></h1>
-            <input type="text" placeholder="Busque por algo">
-            <img class="container__image--fotoPerfil" src="Image/foto-perfil.png">
+        <div class="cabecalho">
+            <h1><img class="cabecalho__image--logo" src="Image/logo.png" alt="Logo AluraDev" /></h1>
+            <input class="cabecalho__busca"type="text" placeholder="Busque por algo">
+            <img class="cabecalho__image--fotoPerfil" src="Image/foto-perfil.png">
         </div>
     </header>
 
     <main>
         <section class="menu">
-            <h3>MENU</h3>
-
+            <h3 class="menu__titulo">MENU</h3>
             <nav class="menu__list">
                 <div class="menu__list--item">
-                    <div class="menu__list--button">
+                    <div class="menu__list--icon">
                         <img src="Image/Code.png">
                     </div>
-                    <a href="index.html">Editor de Codigo</a>
+                    <a class="menu__list--link" href="index.html">Editor de Codigo</a>
                 </div>
                 <div class="menu__list--item">
-                    <div class="menu__list--button">
+                    <div class="menu__list--icon">
                         <img src="Image/comunidade.png">
                     </div>
-                    <a href="">Comunidade</a>
+                    <a class="menu__list--link" href="#">Comunidade</a>
                 </div>
             </nav>
         </section>
 
-        <section class="projeto">
+        <section class="projeto__code">
             <div class="projeto__code--boxOut">
                 <div class="projeto__code--boxIn">
                     <div>
@@ -56,34 +55,30 @@
                         <img src="Image/Ellipse 3.png">
 
                     </div>
-                    <textarea id="projeto-code" rows="20"></textarea>
+                    <textarea id="type-code" rows="20"></textarea>
                 </div>
             </div>
             <br>
             <input id="botao-highlight" type="button" value="Visualizar com o highlight">
         </section>
 
-        <section class="formSalvarProjeto">
+        <section class="projeto__new">
             <form>
-                <div class="formSalvarProjeto__info">
+                <div class="projeto__new--info">
                     <h3>SEU PROJETO</h3>
                     <input id="nome-projeto" type="text" placeholder="Nome do seu projeto">
                     <textarea id="descricao-projeto" rows="10" placeholder="Descricao do seu projeto"></textarea>
                 </div>
                 <br>
-                <div class="formSalvarProjeto__personalizacao">
+                <div class="projeto__new--personalizacao">
                     <h3>PERSONALIZACAO</h3>
-                    <select class="formSalvarProjeto__personalizacao--linguagem" name="selecao-linguagem">
-                        <option class="item-linguagem" value="Javascript">Javascript</option>
-                        <option class="item-linguagem" value="HTML">HTML</option>
-                        <option class="item-linguagem" value="CSS">CSS</option>
+                    <select class="projeto__new--personalizacao-linguagem" name="selecao-linguagem">
+                        <option class="linguagem-item" value="Javascript">Javascript</option>
+                        <option class="linguagem-item" value="HTML">HTML</option>
+                        <option class="linguagem-item" value="CSS">CSS</option>
                     </select>
-                    <div class="formSalvarProjeto__personalizacao--cor">
-                        <select>
-                            <option value="#6BD1FF"></option>
-                            <option value="#FCBA03"></option>
-                            <option value="#C42318"></option>
-                        </select>
+                    <div class="projeto__new--personalizacao-cor">
+                        <input type="color" value="#6BD1FF">
                     </div>
                 </div>
                 <br>

@@ -1,10 +1,10 @@
 /* Code for body, new project */
-.formSalvarProjeto {
+.projeto__new {
     margin-right: 1rem;
 }
 
-.formSalvarProjeto__info,
-.formSalvarProjeto__personalizacao {
+.projeto__new--info,
+.projeto__new--personalizacao {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -12,8 +12,8 @@
 
 #nome-projeto,
 #descricao-projeto,
-.formSalvarProjeto__personalizacao--linguagem {
-    background: rgba(255, 255, 255, 0.16);
+.projeto__new--personalizacao-linguagem {
+    background: var(--input-select);
     border-radius: 8px;
     color: #FFFFFF;
     align-self: stretch;
@@ -24,6 +24,7 @@
     border-style: none;
     box-sizing: border-box;
     padding-left: 1rem;
+    opacity: 64%;
 }
 
 #descricao-projeto {
@@ -32,16 +33,16 @@
     font-family: 'Inter', sans-serif;
 }
 
-.item-linguagem {
-    background: rgba(255, 255, 255, 0.16);
+.linguagem-item {
+    background: var(--input-select);
     color: #000000;
 }
 
-.formSalvarProjeto__personalizacao--cor {
+.projeto__new--personalizacao-cor {
     display: flex;
     justify-content: center;
-    background-color: #051D3B;
-    border: 1px solid #FFFFFF;
+    background-color: var(--azul-marinho);
+    border: 1px solid var(--branco);
     border-radius: 8px;
     width: 272px;
     height: 56px;
@@ -49,9 +50,8 @@
 }
 
 
-.formSalvarProjeto__personalizacao--cor select {
-    -webkit-appearance: none;
-    background-color: #6BD1FF;
+.projeto__new--personalizacao-cor input {
+    background-color: var(--aqua);
     border-radius: 4px;
     width: 256px;
     height: 40px;
@@ -59,10 +59,11 @@
     border-style: none;
 }
 
+
 #botao-salvar-projeto {
     width: 272px;
     height: 56px;
-    background: #5081FB;
+    background: var(--azul-escuro);
     border-radius: 8px;
     font-size: 16px;
     text-align: center;

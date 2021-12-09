@@ -1,8 +1,24 @@
+:root {
+    --branco: #FFFFFF;
+    --azul-claro: #96B9FD;
+    --azul: #7BA4FC;
+    --azul-escuro: #5081FB;
+    --azul-escuro-opaco: rgba(80, 129, 251, 0.08);
+    --azul-marinho: #051D3B;
+    --aqua: #6BD1FF;
+
+    --input-select: rgba(255, 255, 255, 0.16);
+    --type-code: #141414;
+
+    --inter: 'Inter', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+}
+
 body {
-    background: #051D3B;
+    background: var(--azul-marinho);
     border-radius: 40px;
     margin: 15px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--inter);
 }
 
 textarea {
@@ -18,7 +34,7 @@ main {
 }
 
 h3 {
-    color: #FFFFFF;
+    color: var(--branco);
     font-size: 12px;
     letter-spacing: 0.4rem;
 }
