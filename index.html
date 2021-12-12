@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -19,16 +20,17 @@
 </head>
 
 <body>
-    <header>
-        <div class="cabecalho">
-            <h1><img class="cabecalho__image--logo" src="Image/logo.png" alt="Logo AluraDev" /></h1>
-            <input class="cabecalho__busca"type="text" placeholder="Busque por algo">
-            <img class="cabecalho__image--fotoPerfil" src="Image/foto-perfil.png">
-        </div>
+    <header class="cabecalho container">
+        <img src="Image/Logo.svg" alt="Logo AluraDev" class="cabecalho__image--logo" />
+        <input class="cabecalho__busca" id="cabecalho-busca" type="text" placeholder="Busque por algo">
+        <!-- <label for="cabecalho-busca visuallyhidden">Busque algo</label> -->
+        <!-- <img class="cabecalho__image--fotoPerfil" src="Image/foto-perfil.png"> -->
+        <img src="Image/Search.svg" alt="Search" class="cabecalho__image--search">
+        <img src="Image/Menu Hamburger.svg" alt="Menu" class="cabecalho__image--menu">
     </header>
 
     <main>
-        <section class="menu">
+        <section class="menu container">
             <h3 class="menu__titulo">MENU</h3>
             <nav class="menu__list">
                 <div class="menu__list--item">
@@ -46,7 +48,7 @@
             </nav>
         </section>
 
-        <section class="projeto__code">
+        <section class="projeto__code container">
             <div class="projeto__code--boxOut">
                 <div class="projeto__code--boxIn">
                     <div>
@@ -59,30 +61,30 @@
                 </div>
             </div>
             <br>
-            <input id="botao-highlight" type="button" value="Visualizar com o highlight">
+            <input id="botao-highlight" class="botao" type="button" value="Visualizar com o highlight">
         </section>
 
-        <section class="projeto__new">
+        <section class="projeto__new container">
             <form>
                 <div class="projeto__new--info">
                     <h3>SEU PROJETO</h3>
                     <input id="nome-projeto" type="text" placeholder="Nome do seu projeto">
                     <textarea id="descricao-projeto" rows="10" placeholder="Descricao do seu projeto"></textarea>
                 </div>
-                <br>
                 <div class="projeto__new--personalizacao">
                     <h3>PERSONALIZACAO</h3>
-                    <select class="projeto__new--personalizacao-linguagem" name="selecao-linguagem">
-                        <option class="linguagem-item" value="Javascript">Javascript</option>
-                        <option class="linguagem-item" value="HTML">HTML</option>
-                        <option class="linguagem-item" value="CSS">CSS</option>
-                    </select>
-                    <div class="projeto__new--personalizacao-cor">
-                        <input type="color" value="#6BD1FF">
+                    <div class="projeto__new--itens">
+                        <select class="projeto__new--personalizacao-linguagem" name="selecao-linguagem">
+                            <option class="linguagem-item" value="Javascript">Javascript</option>
+                            <option class="linguagem-item" value="HTML">HTML</option>
+                            <option class="linguagem-item" value="CSS">CSS</option>
+                        </select>
+                        <div class="projeto__new--personalizacao-cor">
+                            <input type="color" value="#6BD1FF">
+                        </div>
                     </div>
                 </div>
-                <br>
-                <input id="botao-salvar-projeto" type="submit" value="Salvar projeto">
+                <input id="botao-salvar-projeto" class="botao" type="submit" value="Salvar projeto">
             </form>
         </section>
     </main>

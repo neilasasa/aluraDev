@@ -1,6 +1,7 @@
 /* Code for body, menu section */
 .menu {
-    margin-left: 1rem;
+    display: none;
+    /* margin-left: 1rem; */
 }
 
 .menu__list {

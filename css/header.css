@@ -1,27 +1,44 @@
 /* Code for header */
-header .cabecalho {
+.cabecalho {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-content: center;
     justify-content: space-between;
-}
-
-.cabecalho__image--logo {
-    width: 180px;
-}
-
-.cabecalho__busca {
-    width: 752px;
-    height: 56px;
-    border-radius: 8px;
-    background: var(--input-select);
-    font-size: 16px;
-    color: var(--branco);
-    padding-left: 15px;
-    border-style: none;
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
     box-sizing: border-box;
-    margin-right: 7rem;
 }
 
+.cabecalho__image--search {
+    margin-left: 5rem;
+}
+
+.cabecalho__busca{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__busca {
+        display: block;
+        width: 100%;
+        height: 56px;
+        border-radius: 8px;
+        border-style: none;
+        box-sizing: border-box;
+        background: var(--input-select);
+        font-size: 16px;
+        color: var(--branco);
+        padding-left: 1rem;        
+        margin-right: 2.5rem;
+        margin-left: 1.75rem;
+    }
+
+    .cabecalho__image--search {
+        display: none;
+    }
+}
+
+/* 
 .cabecalho__image--fotoPerfil {
     width: 150px;
-}
+} */

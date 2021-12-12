@@ -1,11 +1,16 @@
 /* Code for body, type code */
+.projeto__code{
+    align-content: center;
+    margin-bottom: 3rem;
+}
+
 .projeto__code--boxOut {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 32px;
-    width: 752px;
-    height: 366px;
+    padding: 2rem;
+    width: 100%;
+    height: 492px;
     background: var(--aqua);
     border-radius: 8px;
     border-style: none;
@@ -16,9 +21,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 16px;
-    width: 688px;
-    height: 302px;
+    padding: 1rem;
+    width: 100%;
+    height: 428px;
     background: var(--type-code);
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
     border-radius: 8px;
@@ -33,25 +38,23 @@
 }
 
 #type-code {
-    width: 656px;
-    height: 234px;
+    width: 100%;
+    height: 360px;
     font-size: 14px;
     line-height: 18px;
     color: #FFFFFF;
     font-family: var(--roboto-mono);
     flex: none;
     order: 1;
-    margin-top: 24px;
+    margin-top: 1.75rem;
+    padding-bottom: 1rem;
     background: var(--type-code);
     border-style: none;
+    box-sizing: border-box;
 }
 
 #botao-highlight {
-    width: 752px;
-    height: 56px;
+    width: 100%;
     background-color: var(--azul-escuro-opaco);
-    border-radius: 8px;
     color: var(--branco);
-    font-size: 16px;
-    border-style: none;
 }

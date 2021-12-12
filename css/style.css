@@ -21,20 +21,44 @@ body {
     font-family: var(--inter);
 }
 
-textarea {
-    resize: none;
+.container {
+    padding-right: 2%;
+    padding-left: 2%;
 }
 
-
-/* Code for main */
-main {
+/* main {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+*/
 
 h3 {
     color: var(--branco);
     font-size: 12px;
     letter-spacing: 0.4rem;
+} 
+
+textarea {
+    resize: none;
 }
+
+.botao {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 16px;    
+    border-style: none;
+}
+
+.visuallyhidden { 
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+  }
