@@ -1,7 +1,11 @@
 /* Code for body, type code */
 .projeto__code{
+    display: flex;
+    flex-direction: column;
     align-content: center;
     margin-bottom: 3rem;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .projeto__code--boxOut {
@@ -9,6 +13,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
     height: 492px;
     background: var(--aqua);
@@ -55,6 +60,28 @@
 
 #botao-highlight {
     width: 100%;
+    height: 56px;
     background-color: var(--azul-escuro-opaco);
     color: var(--branco);
+}
+
+@media screen and (min-width: 1440px){
+    .projeto__code--boxOut{
+        width: 752px;
+        height: 366px;
+    }
+
+    .projeto__code--boxIn{
+        width: 688px;
+        height: 302px;
+    }
+
+    #type-code{
+        width: 656px;
+        height: 234px;
+    }
+
+    #botao-highlight{
+        width: 752px;
+    }
 }

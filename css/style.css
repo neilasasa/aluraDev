@@ -26,18 +26,11 @@ body {
     padding-left: 2%;
 }
 
-/* main {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-*/
-
 h3 {
     color: var(--branco);
     font-size: 12px;
     letter-spacing: 0.4rem;
-} 
+}
 
 textarea {
     resize: none;
@@ -51,14 +44,27 @@ textarea {
     box-sizing: border-box;
     padding: 1rem 2rem;
     border-radius: 8px;
-    font-size: 16px;    
+    font-size: 16px;
     border-style: none;
 }
 
-.visuallyhidden { 
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
-  }
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .principal {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+}
