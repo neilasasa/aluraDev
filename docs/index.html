@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
 
-
+    
     <title>Alura Front-End Challenge</title>
 </head>
 
@@ -37,12 +37,12 @@
             <h3 class="menu__titulo">MENU</h3>
             <nav class="menu__list">
                 <div class="menu__list--item">
-                    <img src="Image/Icon Code.svg">
+                    <div class="menu__button"><img src="Image/code.svg"></div>
                     <a class="menu__list--link" href="index.html">Editor de Codigo</a>
                 </div>
                 <div class="menu__list--item">
-                    <img src="Image/Icon Comunidade.svg">
-                    <a class="menu__list--link" href="#">Comunidade</a>
+                    <div class="menu__button"><img src="Image/people.svg"></div>
+                    <a class="menu__list--link" href="community.html">Comunidade</a>
                 </div>
             </nav>
         </section>
@@ -56,7 +56,10 @@
                         <img src="Image/Ellipse 3.png">
 
                     </div>
-                    <textarea id="type-code" rows="20"></textarea>
+                    <div class="codigo-wrapper">
+                        <code id="type-code" class="preview hljs" contenteditable="true" aria-label="Editor de Codigo">function teste(){}</code>
+                    </div>
+                    <!-- <textarea id="type-code" rows="20"></textarea> -->
                 </div>
             </div>
             <input id="botao-highlight" class="botao" type="button" value="Visualizar com o highlight">
@@ -88,5 +91,6 @@
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="index.js"></script>
 
 </html>

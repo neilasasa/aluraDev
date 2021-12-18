@@ -58,6 +58,16 @@
     box-sizing: border-box;
 }
 
+.preview{
+    display: block;
+    margin: 2rem;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    white-space: pre-wrap;    
+    background: var(--type-code);
+}
+
 #botao-highlight {
     width: 100%;
     height: 56px;
