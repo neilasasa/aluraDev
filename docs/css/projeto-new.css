@@ -47,19 +47,14 @@
 }
 
 .projeto__new--personalizacao-linguagem {
-    display: flex;
-    align-content: flex-start;
-    flex-direction: row;
     box-sizing: border-box;
     background: var(--input-select);
     border-radius: 8px;
     color: #FFFFFF;
-    align-self: stretch;
     width: 100%;
     height: 56px;
     font-size: 16px;
     border-style: none;
-    box-sizing: border-box;
     padding-left: 1rem;
     opacity: 64%;
 }
@@ -70,21 +65,15 @@
 }
 
 .projeto__new--personalizacao-cor {
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    flex-direction: row;
     background-color: var(--azul-marinho);
     border: 1px solid var(--branco);
     border-radius: 8px;
     width: 100%;
     height: 56px;
-    font-size: 16px;
     padding: 0.5rem;
     box-sizing: border-box;
     margin-top: 0.5rem;
 }
-
 
 .projeto__new--personalizacao-cor input {
     background-color: var(--aqua);
@@ -94,7 +83,6 @@
     align-self: center;
     border-style: none;
 }
-
 
 #botao-salvar-projeto {
     width: 100%;
@@ -111,14 +99,10 @@
     }
 
     .projeto__new--personalizacao-linguagem {
-        display: flex;
-        align-content: center;
         margin-right: 0.5rem;
     }
 
     .projeto__new--personalizacao-cor {
-        display: flex;
-        align-content: center;
         margin-left: 0.5rem;
         margin-top: 0;
     }
@@ -146,7 +130,7 @@
         width: 272px;
     }
 
-    .projeto__new--personalizacao-cor{
+    .projeto__new--personalizacao-cor {
         margin-top: 1rem;
         margin-left: 0;
     }

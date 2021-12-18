@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
 
-    
+
     <title>Alura Front-End Challenge</title>
 </head>
 
@@ -37,12 +37,20 @@
             <h3 class="menu__titulo">MENU</h3>
             <nav class="menu__list">
                 <div class="menu__list--item">
-                    <div class="menu__button"><img src="Image/code.svg"></div>
-                    <a class="menu__list--link" href="index.html">Editor de Codigo</a>
+                    <a class="menu__list--link" href="index.html">
+                        <div class="menu__button">
+                            <img src="Image/code.svg">
+                        </div>
+                        <span>Editor de Codigo</span>
+                    </a>
                 </div>
-                <div class="menu__list--item">
-                    <div class="menu__button"><img src="Image/people.svg"></div>
-                    <a class="menu__list--link" href="community.html">Comunidade</a>
+                <div class="menu__list--item opaco">
+                    <a class="menu__list--link" href="community.html">
+                        <div class="menu__button">
+                            <img src="Image/people.svg">
+                        </div>
+                        <span>Comunidade</span>
+                    </a>
                 </div>
             </nav>
         </section>
@@ -57,7 +65,8 @@
 
                     </div>
                     <div class="codigo-wrapper">
-                        <code id="type-code" class="preview hljs" contenteditable="true" aria-label="Editor de Codigo">function teste(){}</code>
+                        <code id="type-code" class="preview hljs" contenteditable="true"
+                            aria-label="Editor de Codigo">function teste(){}</code>
                     </div>
                     <!-- <textarea id="type-code" rows="20"></textarea> -->
                 </div>
@@ -80,9 +89,7 @@
                             <option class="linguagem-item" value="HTML">HTML</option>
                             <option class="linguagem-item" value="CSS">CSS</option>
                         </select>
-                        <div class="projeto__new--personalizacao-cor">
-                            <input type="color" value="#6BD1FF">
-                        </div>
+                        <input class="projeto__new--personalizacao-cor" type="color" value="#6BD1FF">
                     </div>
                 </div>
                 <input id="botao-salvar-projeto" class="botao" type="submit" value="Salvar projeto">

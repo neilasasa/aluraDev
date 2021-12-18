@@ -1,5 +1,5 @@
 /* Code for body, type code */
-.projeto__code{
+.projeto__code {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -42,30 +42,26 @@
     margin-right: 0.3rem;
 }
 
-#type-code {
-    width: 100%;
-    height: 360px;
-    font-size: 14px;
-    line-height: 18px;
-    color: #FFFFFF;
-    font-family: var(--roboto-mono);
-    flex: none;
-    order: 1;
-    margin-top: 1.75rem;
-    padding-bottom: 1rem;
-    background: var(--type-code);
-    border-style: none;
+.codigo-wrapper {
+    display: flex;
     box-sizing: border-box;
+    width: 100%;
+    margin: 1rem 0;
+    min-height: 100px;
+    overflow: hidden;
 }
 
-.preview{
+.preview {
     display: block;
-    margin: 2rem;
-    padding: 10px;
     box-sizing: border-box;
-    height: 100%;
-    white-space: pre-wrap;    
+    white-space: pre-wrap;
+    border-style: none;
+    color: #FFFFFF;
+    font-family: var(--roboto-mono);
     background: var(--type-code);
+    background: var(--type-code);
+    font-size: 14px;
+    line-height: 18px;
 }
 
 #botao-highlight {
@@ -75,23 +71,23 @@
     color: var(--branco);
 }
 
-@media screen and (min-width: 1440px){
-    .projeto__code--boxOut{
+@media screen and (min-width: 1440px) {
+    .projeto__code--boxOut {
         width: 752px;
         height: 366px;
     }
 
-    .projeto__code--boxIn{
+    .projeto__code--boxIn {
         width: 688px;
         height: 302px;
     }
 
-    #type-code{
+    #type-code {
         width: 656px;
         height: 234px;
     }
 
-    #botao-highlight{
+    #botao-highlight {
         width: 752px;
     }
 }
